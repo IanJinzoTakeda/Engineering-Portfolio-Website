@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Slot 3</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="SoftwareProjects.html">← Back</a>
+            <label class="logo"> Python Excel Data Organizer</label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  Excel    |   Python   | VBA Coding  |   Script Writing   |  File Handeling  |  Algorithim Development  | Problem Solving  |  UI Design  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+            <p> Over my last Co-Op, I taught myself Python and Excel VBA code. To challenge myself, I designed a Python script that accesses and retrieves data organized by fields from an Excel sheet and then uses a Microsoft Word document as a template for where the data from the Excel sheet should be positioned on the sheet. The Python script then creates a copy of the Template with the data in the Excel sheet. Furthermore, this script is executed within Excel using a VBA-coded macro that triggers when the button is selected. </p>
+            <p>I decided that this would be a brilliant tool for improving my efficiency when creating research reports. This program would help me save approximately 30 minutes of formatting the report before submission.  </p>
+    </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Flow chart.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Excel Sheet Photo.png" alt="Gimbal Motor Holder">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Example Photo.png" alt="Gimbal Motor Holder">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Define Paths .png" alt="Rack Pinion Base">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Iterate through Ecxel .png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Fill Array.png" alt="GoPro Holder DWG">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Copy path to template.png" alt="Balloon DWG Image">
+                    </div>
+
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python ExcelDocument Automation/Replace all feilds.png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

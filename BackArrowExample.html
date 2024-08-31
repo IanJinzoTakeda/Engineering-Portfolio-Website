@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Arrow Example</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the back arrow */
+        .back-arrow {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .back-arrow:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Back Arrow Example</h2>
+<p>Click on the back arrow to go to the previous page:</p>
+
+<!-- Back arrow element -->
+<a class="back-arrow" onclick="goBack()">← Back</a>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>

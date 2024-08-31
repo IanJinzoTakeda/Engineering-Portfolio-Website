@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Engineering Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <img src="Images/Snow background 2 .png" alt="Snow_Background">
+    </header>
+
+
+
+
+    <nav>
+        <label class="logo">Ian Jinzo Macpherson Engineering Portfolio</label>
+        <ul> 
+            <li><a class="active" href="First_Project.html">Home</a></li>
+            <li><a href="MechanicalProjects.html"> Mechanical Projects</a></li>
+            <li><a href="ReasurchProjects.html">Research Projects</a></li>
+            <li><a href="SoftwareProjects.html">Software Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="Header"> <p>About Me </p></div>
+
+    <sub>
+        <div class="description">
+        <p > Hello. I am Ian Jinzo Macpherson. I am an aspiring Mechatronics Engineering student from the University of Waterloo, and I am passionate about developing my skills. </p>
+        <p>My mission is to make the world safer, Greener, and less wasteful. I have been devoting myself to learning and developing the skills to be an asset to any like-minded team, from learning and practicing material science,  manufacturing, and prototyping to coding, circuit analysis, and circuit design. </p>
+        <p>Outside of my mission, I enjoy playing sports such as ultimate frisbee and soccer, composing, and playing music. This has helped me develop skills such as collaboration, time management, initiative, critical thinking, and many others. </p>
+        <p>I always seek experiences and ways to improve myself, learn, and grow to develop my feather abilities. </p>
+
+
+    </div>
+      
+    </sub>
+
+    <div class="Header"> <p> Work Experince </p></div>
+
+
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slides">
+                <img src="Images/JFE Co-Op.png" class="slide"  >
+                <img src="Images/University of waterloo Co-Op .png" class="slide" >
+                <img src="Images/Duwise Electrical Co-Op.png" class="slide" >
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="Header"> <p> Projects </p></div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Initial display
+        showSlide(currentIndex);
+
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+
+
+
+    <main>
+     <!-- Mechanical Design Projects -->
+   <i> <a href="MechanicalProjects.html" id="mechanical-link">
+        <img id="MechanicalDesign" src="Images/Screenshot 2024-05-22 195525.png" alt="Mechanical Design Projects Images" height=" 600px" width="300px" >
+    </a></i>
+
+    <!-- Research Projects -->
+    <i><a href="ReasurchProjects.html" id="research-link">
+        <img id="ResearchProjects" src="Images/Reasurch Proj 4RS.png" alt="Research Projects Images"height=" 600px" width="300px" >
+    </a></i>
+
+    <!-- Software Projects -->
+   <i> <a href="SoftwareProjects.html" id="software-link">
+        <img id="SoftwareProjects" src="Images/Reasurch Proj 4.png" alt="Software Projects Images"height=" 600px" width="300px" >
+    </a></i>
+
+    <script>
+        // Mechanical Design Projects
+        const mechanicalImages = ['Images/Gimbaal.png', 'Images/PnumaticEngineActual.png', 'Images/RackPinioin Base.png', 'Images/Screenshot 2024-05-22 195525.png']; // Add more images as needed
+        let mechanicalIndex = 0;
+        const mechanicalRedirectUrl = 'MechanicalProjects.html'; // The URL to redirect to when any image is clicked
+
+        function changeMechanicalImage() {
+            const imageElement = document.getElementById('MechanicalDesign');
+            mechanicalIndex = (mechanicalIndex + 1) % mechanicalImages.length;
+            imageElement.src = mechanicalImages[mechanicalIndex];
+        }
+
+        // Research Projects
+        const researchImages = ['Images/Reasurch Proj 1.png', 'Images/Reasurch Proj 2.png', 'Images/Reasurch Proj 3R.png', 'Images/Reasurch Proj 4RS.png'];
+        let researchIndex = 0; 
+        const researchRedirectUrl = 'ReasurchProjects.html';
+
+        function changeResearchImage() {
+            const imageElement = document.getElementById('ResearchProjects');
+            researchIndex = (researchIndex + 1) % researchImages.length;
+            imageElement.src = researchImages[researchIndex];
+        }
+
+        // Software Projects
+        const softwareImages = ['Images/Construction Project Manager.png', 'Images/Data sorter.png', 'Images/Excel Report Writer.png', 'Images/Lab report writer .png'];
+        let softwareIndex = 0; 
+        const softwareRedirectUrl = 'SoftwareProjects.html';
+
+        function changeSoftwareImage() {
+            const imageElement = document.getElementById('SoftwareProjects');
+            softwareIndex = (softwareIndex + 1) % softwareImages.length;
+            imageElement.src = softwareImages[softwareIndex];
+        }
+
+        // Set up the intervals to change images and link redirections
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mechanical Design Projects
+            const mechanicalLink = document.getElementById('mechanical-link');
+            mechanicalLink.href = mechanicalRedirectUrl; 
+            setInterval(changeMechanicalImage, 3000);
+
+            // Research Projects
+            const researchLink = document.getElementById('research-link');
+            researchLink.href = researchRedirectUrl; 
+            setInterval(changeResearchImage, 3000);
+
+            // Software Projects
+            const softwareLink = document.getElementById('software-link');
+            softwareLink.href = softwareRedirectUrl; 
+            setInterval(changeSoftwareImage, 3000);
+        });
+    </script>
+    </main>
+   
+   
+</body>
+</html>

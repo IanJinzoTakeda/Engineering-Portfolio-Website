@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Mechanical projects</title>
+        <img src="Images/Trainning Bailsong/Overview.png" alt="Snow_Background" width="100%">
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="MechanicalProjects.html">← Back</a>
+            <label class="logo">Training Bailsong</label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjectsSlot4.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  GDNT    |   AutoCAD   | SolidWorks  |   Materials Testing   |   Material Analysis  |  Metallurgy  | Manufacturing | CNC Machining |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p> Elements such as weight attachment design and mechanical functionality require precise matching and tolerancing. I wanted to challenge myself and create something that relied on all these factors to be perfect. My skills in Solidworks and design have improved greatly since this project. I thought this would be a great test of skills</p>
+                <p> This training Bailsong challenged my knowledge of Metallurgy, as the project required the center of balance to be centered along the axis of the design to ensure fluidity while using it. For this reason, the blade is made of stainless steel, as not only can I electroplate it to create a unique coloring of the blade, but it is also dense enough to offset the weight of the aluminum handles. </p>
+                <p>I used a variety of CNC machines. I created a variety of CNC machine pathing in order to create and design this project. As a final disclaimer, the blade is perfectly legal as none of the edges are unsharpened and have been dulled by another CNC path that removed 0.05mm to ensure the blade is dulled.</p>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Trainning Bailsong/Blade.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Trainning Bailsong/Handel.png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Trainning Bailsong/Training Bailsong .png" alt="Rack Pinion Base">
+                    </div>
+                    <div>
+                        <video controls src="Images/Trainning Bailsong/IMG-5487 (1).mp4" width="250"></video>
+                    </div>
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

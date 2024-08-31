@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Slot 4</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="SoftwareProjects.html">← Back</a>
+            <label class="logo"> Python Lab report Writer  </label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |   Python   |   Algorithim Development   |  File Handeling  |   Problem solving   |  Critical Thinking  |  Scripting and Automation  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+            <p> A minor issue that I have always encountered when writing search reports is the time it takes to format them. Traditionally, multiple lines of text, varying from class to class with different numbers of sections and subsections, tediously take about 10 to 20 minutes to format correctly.</p>
+            <p>To expedite this process, I created a Python script that takes user data into the console and stores it. Then, using the Pandas library, I can write this input data into a Mircosoft Word document with the correct headers, subheaders, authors, class, etc.  </p>
+    </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Test Example .png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Flow Chart .png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Flow chart -1.png" alt="Rack Pinion Base">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Flow chart -2.png" alt="Gimbal Motor Holder">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Flow Chart -3.png" alt="GoPro Holder DWG">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Python Lab Report Writer/Flow Chart -4.png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

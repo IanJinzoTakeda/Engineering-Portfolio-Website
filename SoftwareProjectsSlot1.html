@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Slot 1</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="SoftwareProjects.html">← Back</a>
+            <label class="logo"> Construction Project Manager </label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  Excel  |  VBA programing   |  Macro Development  |   Excel Formulas   |   UI Design   |   Scripting and Automation  |  Problem Solving  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p> To improve my familiarity with and ability to use Excel and VBA coding, I created a project organizer that sorts projects, jobs, and assignments for related tasks.</p>
+                <p> Specific cells are designated for the Excel sheet and a User Form. This user form is a date tracker that accurately records dates and incorporates elements such as leap years and time frames into the VBA coding. Each section of Project, Job, and Task pulls data from lists that track each column in the Project, Job, and Task pages. The data in each column are brought into the current data list on the main page on each page. Financial balances and charts are automatically updated depending on each project, job, and task. VBA buttons also allow users to create new Projects, jobs, or tasks.  </p>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction Project Manager .png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction Project Manager Admin Page .png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction Project Manager Jobs.png" alt="Rack Pinion Base">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction Project Manager Projects.png" alt="Gimbal Motor Holder">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction Project Manager Main Page.png" alt="GoPro Holder DWG">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Software Photos/Construction Project manager/Construction project Manager Tasks.png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

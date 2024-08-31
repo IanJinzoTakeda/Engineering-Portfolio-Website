@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Mechanical projects</title>
+        <img src="Images/Gimbal Photos/Overview.png" alt="Snow_Background" width="100%">
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="MechanicalProjects.html">← Back</a>
+            <label class="logo"> Go-Pro Gimbal</label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  GDNT    |   AutoCAD   | SolidWorks  |   Materials Testing   |   Material Analysis   |   Manufacturing  | Problem Solving  | 3D Printing |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p>One of my tasks for the university of Waterloos Baja SEA design team I designed a Gimbal to safely secure a Go-pro, which is meant to attach to the Vehicle and capture and record surounding enviornmental data with 180 degrees along the x and Z axis.</p>
+                <p> Inorder to determine which material it is most sutible to print the gimabal in, I had to consider the stress and strain of each conetion point of the gimbal. I concluded that the best material to construct the gimbal from should be ASA (Acrylonitrile Styrene Acrylate) as it has resistance to UV radiation, avoiding degradation and has comparible strength to ABS (Acrylonitrile Butadiene Styrene). ASA at a 25% fill privded substatial stregnth against the envornment and was strong enough to endure testing of teh Baje SAE Buggy.  </p>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/Ballon DWG.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/Exploded-View.png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/GoProGimbalConjoinerDWG.png" alt="Rack Pinion Base">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/GoProGimbalMotorHolder2.png" alt="Gimbal Motor Holder">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/GoProHolderDWG.png" alt="GoPro Holder DWG">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/GoProMotorContainer1.png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Gimbal Photos/GoProSideWallHolderDWG.png" alt="GoPro Side Wall Holder DWG">
+                    </div>
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

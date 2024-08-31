@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Mechanical projects</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="ReasurchProjects.html">← Back</a>
+            <label class="logo">Lab 4: Thermal Effects in Metals and Polymers
+            </label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ResearchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  Report Writing |   Materials Testing   | Data Collection  |   Data Analysis   |  Colabrative Problem Solving  |  Team Work  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+             <p>In this lab, three experiments were performed. The first experiment was conducted to determine the creep regions from the strain-time graph of a Sn-Zn alloy wire. The measurements were conducted by recording three videos of different applied stresses to the wires until fracture. The second experiment was conducted to study the strain-rate dependence of polymers. The third experiment was conducted to study the thermal effects on polymers when the temperature of the polymer was decreased below its glass transition temperature. I worked with a small cross-functional team to break down the tasks to create this lab report, conduct the necessary calculations, and record the data. We used Excel to track and record data and create the graphs shown in the report. </p>
+             <p> </p>
+             <p> If You want to learn more, download the lab report for more details.</p>
+             <a class="Download link"  href="Images/Reasurch Project Files/Copy of MTE 111 Lab 4 - Ian Jinzo Takeda, Joe Chen, Pedro Brossel and Randy Jayasinghe.docx" download="Copy of MTE 111 Lab 4 - Ian Jinzo Takeda, Joe Chen, Pedro Brossel and Randy Jayasinghe.docx"> Click here to View full report</a>
+
+            </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Reasurch Project Files/Lab 4 MatLab output .png" alt="Exploded View Image">
+                    </div>
+
+            </div>
+
+            
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

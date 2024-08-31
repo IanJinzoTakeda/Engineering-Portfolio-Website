@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Mechanical projects</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="MechanicalProjects.html">← Back</a>
+            <label class="logo">Push-Back Car</label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjectsSlot4.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  GDNT    |   AutoCAD   | SolidWorks  |   3D Printing   |  Soldering  |  Manufacturing  |  CNC Machining  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p> In this project, I 3D-modeled each component in Solidworks and created an assembly. 
+                    I also designed a functional circuit diagram for the electrical components and hand-soldered all components together. 
+                    I used my material science and manufacturing knowledge to craft the axial shaft and spacers. I then used CNC machining and 3D printing to create the Battery housing, main body, and wheels out of Polycarbonate, Nylon, and PLC.
+                     Polycarbonate was used for the main body due to its durability as it collides at a reasonably high velocity against walls. Nylon was selected for the wheels due to its reduced conductivity to avoid damaging any electrical components. </p>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                
+                    <div class="image_Addions">
+                        <img src="Images/Push Back car side.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Push Back car Top.png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Push Back car Front.png" alt="Rack Pinion Base">
+                    </div>
+
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

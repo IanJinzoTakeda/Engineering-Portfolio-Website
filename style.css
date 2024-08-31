@@ -1,0 +1,413 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-decoration-color: whitesmoke;
+     box-sizing: border-box;
+
+}
+header{
+
+
+img{
+  width: 100%;
+  height: auto;   
+}
+}
+.grey-box {
+    background-color: Grey 100%; /* Grey color */
+    width: 100%; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    padding: 20px; /* Optional: Add padding to create space between content and box */
+    margin: 20px; /* Optional: Add margin to create space around the box */
+}
+.Black-box {
+  background-color: black 100%; /* Grey color */
+  width: 100%; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  padding: 20px; /* Optional: Add padding to create space between content and box */
+  margin: 20px; /* Optional: Add margin to create space around the box */
+}
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-direction: column; /* Allows for vertical stacking of elements */
+
+    height: 100vh; /* Ensure full viewport height */
+    box-sizing: border-box;
+    background: 
+    /*url('Images/Snow_Background.jpg') center top/100% 30% no-repeat,*/
+        linear-gradient(black 100%, transparent 50%);
+  
+ 
+    
+  }
+  nav{ 
+    background-color: darkslategrey;
+    height:  80px;
+    margin: left;
+  
+  }
+  sub{
+    margin: 50px;
+    font-size: large;
+    border: 50px;
+  }
+  main{
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    padding: 75px;
+    
+  }
+  i {
+    padding: 75px;
+  }
+
+
+
+  label.logo{
+    color: azure;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 10px;
+  
+  }
+  nav ul{ 
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: azure;
+    font-size: small;
+    text-transform: uppercase;
+
+  }
+  a.active, a:hover{
+    background-color: aqua;
+    transition: 0.5s;
+
+  }
+  .container .image-container.resize{
+    height: 250px;
+    width: 500px;
+  }
+ .container{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    
+  }
+.container .image-container{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    padding: 10px;
+
+    
+  }
+
+
+.container .image-container .image{
+
+  height: 600px;
+  width: 300;
+ border: 0 5px 15px solid #fff;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+ cursor: pointer;  
+ display: flex; /* Use flexbox */
+ justify-content: center; /* Center horizontally */
+ align-items: center; /* Center vertically if needed */
+}
+
+.container .image-container .image_Addions{
+
+  border: 0 5px 15px solid #fff;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+  cursor: pointer;  
+  height: 250px;
+  width: 500px;
+  flex: 0 1 auto;
+
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+ }
+ .container .image-container .image_Addions img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear; 
+
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+
+}
+
+.container .image-container .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear; 
+
+}
+
+.container .image-container .image:hover img{
+  transform: scale(1.1);
+}
+.container .image-container .image_Addions:hover img{
+  transform: scale(1.1);
+}
+
+.container .popup-image{
+  position: fixed;
+  top: 0; left: 0;
+  background:  rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+
+}
+
+.container .popup-image span{
+position: absolute;
+top: 0; right: 10px;
+font-size: 60px ;
+font-weight: bolder;
+color:  #fff;
+cursor: pointer;
+z-index: 100;
+
+
+
+}
+
+.container .popup-image img{
+position: absolute;
+top: 50%; left: 50%;
+transform: translate(-50%, -50%);
+border: 5px solid #fff;
+border-radius:  5px;
+width: 750px;
+object-fit: cover;
+}
+
+
+
+@media (max-width:768px) {
+  .container .popup-image img{
+    width: 95%;
+
+  }
+
+  
+}
+.back-arrow {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: black
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; 
+}
+
+.back-arrow:hover {
+  background-color:  aqua;
+}
+
+.skills {
+  font-family: Arial, sans-serif; /* Change to desired font family */
+  font-size: 18px; /* Change to desired font size */
+  color: #ffffff; /* Optional: Change text color */
+  font-weight: bold; /* Optional: Change font weight */
+  font-style: normal; /* Optional: Change font style */
+  line-height: 1.5; /* Optional: Change line height */
+  text-align: Center; /* Optional: Change text alignment */
+  border: 2px solid rgb(255, 255, 255); /* Blue border */
+  padding: 25px; /* Padding inside the border */
+  background-color: rgba(112, 112, 112, 0.5); /* Optional: Background color with transparency */
+  border-radius: 10px; /* Optional: Rounded corners */
+  margin: 15px; /* Optional: Margin around the text box */
+}
+.description {
+  font-family: Arial, sans-serif; /* Change to desired font family */
+  font-size: 18px; /* Change to desired font size */
+  color: #ffffff; /* Optional: Change text color */
+  font-weight: normal; /* Optional: Change font weight */
+  font-style: normal; /* Optional: Change font style */
+  line-height: 1.5; /* Optional: Change line height */
+  text-align: left; /* Optional: Change text alignment */
+  border: 2px solid rgb(255, 255, 255); /* Blue border */
+  padding: 10px; /* Padding inside the border */
+  background-color: rgba(112, 112, 112, 0.5); /* Optional: Background color with transparency */
+  border-radius: 5px; /* Optional: Rounded corners */
+  margin: 10px; /* Optional: Margin around the text box */
+}
+.vertical-box {
+  font-family: Arial, sans-serif; /* Change to desired font family */
+  font-size: 18px; /* Change to desired font size */
+  color: #ffffff; /* Optional: Change text color */
+  font-weight: normal; /* Optional: Change font weight */
+  font-style: normal; /* Optional: Change font style */
+  line-height: 1.5; /* Optional: Change line height */
+  text-align: left; /* Optional: Change text alignment */
+  border: 2px solid rgb(255, 255, 255); /* Blue border */
+  padding: 10px; /* Padding inside the border */
+  background-color: rgba(112, 112, 112, 0.5); /* Optional: Background color with transparency */
+  border-radius: 5px; /* Optional: Rounded corners */
+  margin: 10px; /* Optional: Margin around the text box */
+  width: 525px; /* Fixed width */
+  max-width: 100%; /* Ensure it does not exceed container width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-wrap: break-word; /* Allow breaking of words to avoid horizontal scroll */
+  position: absolute; /* Absolute positioning */
+  right: -50%; /* Align to the right edge of the container */
+  top: 20px; /* Distance from the top */
+
+}
+
+.Header {
+  font-family: Arial, Helvetica, sans-serif; /* Example intriguing font */
+  font-size: 36px; /* Example font size */
+  color: #ffffff; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  text-decoration: underline; /* Underline text */
+  padding: 30px;
+  margin: 35px 0; /* Space above and below the header */
+}
+
+.Download link{
+  font-family: Arial, Helvetica, sans-serif; /* Example intriguing font */
+  font-size: 36px; /* Example font size */
+  color: #9deaf9; /* Text color */
+  text-decoration: underline; /* Underline text */
+  margin: 20px 0; /* Space above and below the header */
+}
+
+
+
+/* This is the test code for the slider */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+
+  margin-bottom:100px ;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: auto;
+  height: 300px; 
+  border-radius: 10px;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Large-Text {
+  margin-top: 25px;
+  color: black;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100px; /* Full viewport height */
+  font-size: 50px; /* Increase font size */
+  text-align: center; /* Center text alignment */
+  text-transform: bold;
+}
+
+.Small-Text {
+  color: black;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100px; /* Full viewport height */
+  font-size: 20px; /* Increase font size */
+  text-align: center; /* Center text alignment */
+
+}
+
+.Social-Media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Social-Media img {
+  max-width: 100%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Mechanical projects</title>
+        <img src="Images/Rack and Pinion Distance Tester/Overview.png" alt="Snow_Background" width="100%">
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="MechanicalProjects.html">← Back</a>
+            <label class="logo">Waterloo Formula Motorsports Gimbal</label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ReasurchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |   AutoCAD   | SolidWorks  |   Breadboarding   |   PLC Programming  |   3D Printing | Project Managmnet  |</p>
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p>In this project for a statistics proect we designed an aporatus that uses encoder count to gauge the distance between the stationary wall and the distance of the pinion being moved toward the wall. </p>
+                <p>I designed the components and moch components of each part as well as a proper conection method to the base. </p>
+                <p> we then programed an Arduno Uno board to record the data from the motor encoder, the revolutions are then tracked and used to calculate the distance the rack moved from teh distance of the wall. </p>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                 
+                    <div class="image_Addions">
+                        <img src="Images/Rack and Pinion Distance Tester/Base Suport.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Rack and Pinion Distance Tester/Encoder Supporter .png" alt="Balloon DWG Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Rack and Pinion Distance Tester/Rack.png" alt="Gimbal Motor Holder">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Rack and Pinion Distance Tester/View 2.png" alt="GoPro Holder DWG">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Rack and Pinion Distance Tester/View 1.png" alt="GoPro Motor Container">
+                    </div>
+                </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>

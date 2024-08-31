@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="Images/Tab Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Engineering Portfolio - Reasurch projects</title>
+    </head>
+    <body>
+        <nav>
+            <a class="back-arrow" href="ReasurchProjects.html">← Back</a>
+            <label class="logo"> Lab 1: Elastic Properties of Cantilevered Beams </label>
+            <ul>
+                <a href="First_Project.html"><img src="" alt=""></a>
+                <li><a href="First_Project.html">Home</a></li>
+                <li><a href="MechanicalProjects.html">Mechanical Projects</a></li>
+                <li><a href="SoftwareProjects.html">Software Projects</a></li>
+                <li><a href="ResearchProjects.html">Research Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Contact.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="Header"> <p>Skills</p></div>
+        <div class="skills">
+            <p>  |  Report Writing |   Materials Testing   | Data Collection  |   Data Analysis   |  Colabrative Problem Solving  |  Team Work  |  Excel  |
+        </div>
+        <div class="Header"> <p>Description</p></div>
+        <div class="description">
+                <p>In this lab, we graphed the load and deflection in pine wood (along the grain), 6061-T6 wrought aluminum alloy, and AISI 1018 cold-rolled low-carbon mild steel to determine the modulus of elasticity in each beam. 
+                    I worked with a small cross-functional team to break down the tasks to create this lab report, conduct the necessary calculations, and record the data. We used Excel to track and record data and create the graphs shown in the report. </p>
+                <p> If You want to learn more you can Download the lab report for more details.</p>
+                <a  href="Images/Reasurch Project Files/Copy of MTE 111 Lab 1 - Ian Jinzo Takeda, Joe Chen, Pedro Brossel, Randy Jayasinghe.docx" download=" Copy of MTE 111 Lab 1 - Ian Jinzo Takeda, Joe Chen, Pedro Brossel, Randy Jayasinghe.docx"> Click here to View full report</a>
+        </div>
+
+        <div class="container">
+            <div class="image-container">
+                    <div class="image_Addions">
+                        <img src="Images/Reasurch Project Files/Lab 1 Appratus.png" alt="Exploded View Image">
+                    </div>
+                    <div class="image_Addions">
+                        <img src="Images/Reasurch Project Files/Lab 1 Graph.png" alt="Balloon DWG Image">
+                    </div>
+                </div>
+
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'flex';
+                    const newSrc = image.getAttribute('src');
+                    document.querySelector('.popup-image img').src = newSrc;
+                };
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            };
+        </script>
+    </body>
+</html>
